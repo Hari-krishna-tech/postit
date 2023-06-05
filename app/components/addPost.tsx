@@ -7,6 +7,7 @@ import {useMutation, useQueryClient} from '@tanstack/react-query'
 export default function CreatePost() {
     const [title, setTitle] = useState("")
     const [isDisabled, setIsDisabled] = useState(false)
+    const queryClient = useQueryClient()
     let toastPostID: string = "hello"
 
 
@@ -20,6 +21,7 @@ export default function CreatePost() {
             setIsDisabled(false)
         }, onSuccess: (data) => {
             toast.success("Post has been Made 🔥", {id: toastPostID})
+            queryClient.invalidateQueries(["posts"])
             setTitle("");
             setIsDisabled(false)
         }
