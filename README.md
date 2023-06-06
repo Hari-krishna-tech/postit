@@ -1,3 +1,7 @@
+
+Video Demo
+https://github.com/Hari-krishna-tech/postit/assets/53630264/8a808f57-78ca-4016-b297-5e7f883c64ff
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
